@@ -63,12 +63,12 @@ for f_i in range(1,number_of_folds+1):
     y_test_dict[f_i] =  y_test.copy()
     
 #Hyperparameter testing
-max_depth_list = [3,5,10,15,20]
+max_depth_list = [3,5,10,15]
 gamma_list = [1,5,10]
-min_child_list = [0,2,5,10]
-n_estimators_list = [100,200,300]
-subsample_list = [0.1,0.5,0.75,1]
-learning_rate_list = [0.01,0.05,0.1,0.2]
+min_child_list = [0,5,10]
+n_estimators_list = [100,200,250,300]
+subsample_list = [0.5,0.75,1]
+learning_rate_list = [0.01,0.05,0.1]
 total_iter = len(max_depth_list) * len(gamma_list) * len(min_child_list) * len(n_estimators_list) * len(learning_rate_list) * len(subsample_list)
 result_mean_dict = {}
 result_std_dict = {}
@@ -115,7 +115,10 @@ for learning_rate in learning_rate_list:
                                     if date_id > min(X_test_dict[f_i]['date_id'].unique()):
                                         X_previous_day_test = X_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id - 1].copy()
                                         y_previous_day_test =  y_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id - 1].copy()
-                                        model.fit(X_previous_day_test , y_previous_day_test,xgb_model=booster)
+                                        X_train_dict[f_i] = pd.concat([X_train_dict[f_i],X_previous_day_test ])
+                                        y_train_dict[f_i] = pd.concat([y_train_dict[f_i],y_previous_day_test])
+                                        #model.fit(X_previous_day_test , y_previous_day_test,xgb_model=booster)
+                                        model.fit(X_train_dict[f_i] , y_train_dict[f_i],xgb_model == booster)
                                     #Predicting the current day data
                                     X_current_test = X_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id].copy()
                                     y_current_test = y_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id].copy()
