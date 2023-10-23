@@ -106,8 +106,8 @@ for learning_rate in learning_rate_list:
                                             subsample = subsample,
                                             gamma = gamma)
 
-                                model.fit(X_train_dict[f_i] , y_train_dict[f_i] ,
-                                        verbose=100)
+                                model.fit(X_train_dict[f_i] , y_train_dict[f_i])
+                                booster = model.get_booster()
                                 daily_result_list = []
                                 for date_id in X_test_dict[f_i]['date_id'].unique():
                                     print('Validation',count,'out of',total_iter,'| Fold:',f_i,'out of',number_of_folds,'| Date:',date_id,'from',min( X_test_dict[f_i]['date_id'].unique()),'to', max(X_test_dict[f_i]['date_id'].unique()))
@@ -115,8 +115,7 @@ for learning_rate in learning_rate_list:
                                     if date_id > min(X_test_dict[f_i]['date_id'].unique()):
                                         X_previous_day_test = X_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id - 1].copy()
                                         y_previous_day_test =  y_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id - 1].copy()
-                                        model.fit(X_previous_day_test , y_previous_day_test,
-                                            verbose=100)
+                                        model.fit(X_previous_day_test , y_previous_day_test,xgb_model=booster)
                                     #Predicting the current day data
                                     X_current_test = X_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id].copy()
                                     y_current_test = y_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id].copy()
