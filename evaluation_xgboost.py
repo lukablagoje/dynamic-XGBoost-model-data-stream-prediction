@@ -118,7 +118,7 @@ for learning_rate in learning_rate_list:
                                         X_train_dict[f_i] = pd.concat([X_train_dict[f_i],X_previous_day_test ])
                                         y_train_dict[f_i] = pd.concat([y_train_dict[f_i],y_previous_day_test])
                                         #model.fit(X_previous_day_test , y_previous_day_test,xgb_model=booster)
-                                        model.fit(X_train_dict[f_i] , y_train_dict[f_i],xgb_model == booster)
+                                        model.fit(X_train_dict[f_i] , y_train_dict[f_i],xgb_model = booster)
                                     #Predicting the current day data
                                     X_current_test = X_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id].copy()
                                     y_current_test = y_test_dict[f_i][X_test_dict[f_i]['date_id'] == date_id].copy()
