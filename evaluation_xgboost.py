@@ -107,7 +107,7 @@ def evaluate_folds(df,fold_dict,X_train_dict, y_train_dict,X_test_dict, y_test_d
                 X_test_df = pd.concat(X_seconds_list).copy()
                 X_test_df['absolute_error'] = abs(X_test_df['target'] - X_test_df['target_pred'])
                 mae_test_list.append(np.round(X_test_df['absolute_error'].mean(),5))
-            return  mae_train_list.copy(), mae_test_list.copy()
+            return  mae_test_list.copy(), mae_train_list.copy()
 
 print("Loading data")
 dtypes = {
