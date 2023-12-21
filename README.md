@@ -13,4 +13,5 @@ As the final submission allowed for two strategies, two models were developed:
 1) Initial exploratory data analysis - data_analysis_luka.ipynb
 2) Cross-validation framework for time series data - https://github.com/lukablagoje/closing-cross-auction/blob/main/hyperparameter_optimization_individual_models.py
 3) Overall exploration of the cross-validation - https://github.com/lukablagoje/closing-cross-auction/blob/main/hyperparameter_optimization_results.ipynb
-4) Checking how model features were change during retraining - model_diagnostic_evaluation_framework.ipynb
+4) Checking how model features were change during retraining - [model_diagnostic_evaluation_framework.ipynb
+](https://github.com/lukablagoje/closing-cross-auction/blob/main/model_diagnostic_evaluation_framework.ipynb)https://github.com/lukablagoje/closing-cross-auction/blob/main/model_diagnostic_evaluation_framework.ipynb
