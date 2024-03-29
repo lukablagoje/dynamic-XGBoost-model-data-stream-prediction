@@ -10,7 +10,7 @@ As the final submission allowed for two strategies, two models were developed:
    
 # Technical Overview
 [1. k_fold_time_series_hyperoptimization.ipynb](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction/blob/main/1.%20k_fold_time_series_hyperoptimization.ipynb) - Optimized hyperparameters using k-fold cross-validation tailored for time-series data, including periodic retraining.
-[2. data_stream_prediction.ipynb](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction/blob/main/2.%20data_stream_prediction.ipynb) - Automated data-stream tasks: data collection and cleaning, feature engineering, model retraining, and prediction.
+[2. data_stream_prediction.ipynb](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction/blob/main/2.%20data_stream_prediction.ipynb) - Automated data-stream tasks: data collection and cleaning, feature engineering, model retraining, and prediction.
 
 # Data 
 Accessible under the rules of the competition at this link: [https://www.kaggle.com/competitions/optiver-trading-at-the-close](https://www.kaggle.com/competitions/optiver-trading-at-the-close)
