@@ -1,5 +1,5 @@
-# Dynamic XGBoost-based model for real-time price prediction
-In this Kaggle competition [https://www.kaggle.com/competitions/optiver-trading-at-the-close] , the goal was to predict closing prices of 200 different stocks, at the last 10 minutes of the NASDAQ closing auction. The training data encompassed 480 days of auctions, while the scoring was done on the unknown test set, unavailable to the public.
+# Dynamic XGBoost-based model on a data stream for stock price prediction
+In this Kaggle competition [https://www.kaggle.com/competitions/optiver-trading-at-the-close] , the goal was to predict closing prices of 200 different stocks, at the last 10 minutes of the NASDAQ closing auction. The training data encompassed 480 days of auctions, while the scoring was done on the unknown test set, which was revealed day by day since the start of the competition. This means that many of the tasks had to be automatized for a data stream, including  data collection and cleaning, feature engineering, model retraining, and prediction.
 
 # Project Overview
 This project revolved around XGBoost Machine Learning Algorithm, a gradient-boosting tree.
@@ -15,3 +15,6 @@ As the final submission allowed for two strategies, two models were developed:
 3) Overall exploration of the cross-validation - https://github.com/lukablagoje/closing-cross-auction/blob/main/hyperparameter_optimization_results.ipynb
 4) Checking how model features were change during retraining - [model_diagnostic_evaluation_framework.ipynb
 ](https://github.com/lukablagoje/closing-cross-auction/blob/main/model_diagnostic_evaluation_framework.ipynb)https://github.com/lukablagoje/closing-cross-auction/blob/main/model_diagnostic_evaluation_framework.ipynb
+
+# Data 
+Accessible under the rules of the competition at this link: [https://www.kaggle.com/competitions/optiver-trading-at-the-close](https://www.kaggle.com/competitions/optiver-trading-at-the-close)
