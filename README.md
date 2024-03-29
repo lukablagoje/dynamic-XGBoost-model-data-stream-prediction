@@ -17,4 +17,5 @@ As the final submission allowed for two strategies, two models were developed:
 
 # Data 
 Accessible under the rules of the competition at this link: [https://www.kaggle.com/competitions/optiver-trading-at-the-close](https://www.kaggle.com/competitions/optiver-trading-at-the-close)
+
 Image Source: https://www.researchgate.net/figure/Simplified-structure-of-XGBoost_fig2_348025909
