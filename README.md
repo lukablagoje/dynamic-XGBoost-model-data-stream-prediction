@@ -2,6 +2,7 @@
 In this Kaggle [competition](https://www.kaggle.com/competitions/optiver-trading-at-the-close), the goal was to predict the closing prices of 200 different stocks, at the last 10 minutes of the NASDAQ closing auction. The training data encompassed 480 days of auctions, while the scoring was done on the unknown test set, which was revealed day by day since the start of the competition. This means that many of the tasks had to be automatized for a data stream, including  data collection and cleaning, feature engineering, model retraining, and prediction. XGBoost Regressor was used, displayed in the figure:
 
 ![image](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction/assets/52599010/3caa45c6-de51-41ac-908f-430b9b66443b)
+
 Image Source: https://www.researchgate.net/figure/Simplified-structure-of-XGBoost_fig2_348025909
 
 # Project Overview
