@@ -11,7 +11,7 @@ As the final submission allowed for two strategies, two models were developed:
 # Technical Overview
 
 1) Initial exploratory data analysis - data_analysis_luka.ipynb
-2) [1. k_fold_time_series_hyperoptimization.ipynb](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction)
+2) [1. k_fold_time_series_hyperoptimization.ipynb](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction)
 
 # Data 
 Accessible under the rules of the competition at this link: [https://www.kaggle.com/competitions/optiver-trading-at-the-close](https://www.kaggle.com/competitions/optiver-trading-at-the-close)
