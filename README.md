@@ -3,8 +3,6 @@ In this Kaggle [competition](https://www.kaggle.com/competitions/optiver-trading
 
 ![image](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction/assets/52599010/3caa45c6-de51-41ac-908f-430b9b66443b)
 
-Image Source: https://www.researchgate.net/figure/Simplified-structure-of-XGBoost_fig2_348025909
-
 # Project Overview
 This project revolved around XGBoost Machine Learning Algorithm, a gradient-boosting tree.
 
@@ -19,3 +17,4 @@ As the final submission allowed for two strategies, two models were developed:
 
 # Data 
 Accessible under the rules of the competition at this link: [https://www.kaggle.com/competitions/optiver-trading-at-the-close](https://www.kaggle.com/competitions/optiver-trading-at-the-close)
+Image Source: https://www.researchgate.net/figure/Simplified-structure-of-XGBoost_fig2_348025909
