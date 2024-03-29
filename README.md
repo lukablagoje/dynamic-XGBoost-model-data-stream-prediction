@@ -5,7 +5,7 @@ In this Kaggle [competition](https://www.kaggle.com/competitions/optiver-trading
    
 
 ![image](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction/assets/52599010/3caa45c6-de51-41ac-908f-430b9b66443b)
-# Technical Overview]
+# Technical Overview
 The project is split into two parts:
 
 [1. k_fold_time_series_hyperoptimization.ipynb](https://github.com/lukablagoje/dynamic-XGBoost-model-data-stream-prediction/blob/main/1.%20k_fold_time_series_hyperoptimization.ipynb) - Found optimal hyperparameters using k-fold cross-validation tailored for time-series data, including periodic retraining.
@@ -14,5 +14,7 @@ The project is split into two parts:
 
 # Data 
 Accessible under the rules of the competition at this link: [https://www.kaggle.com/competitions/optiver-trading-at-the-close](https://www.kaggle.com/competitions/optiver-trading-at-the-close)
+
 Kaggle Notebook: https://www.kaggle.com/code/lukablagoje/xgboost-pipeline
+
 Image Source: https://www.researchgate.net/figure/Simplified-structure-of-XGBoost_fig2_348025909
